@@ -33,11 +33,4 @@ class Task_submission(db.Model):
     is_returned = db.Column(db.Boolean, default=False)
     task_id = db.Column(db.String(10), db.ForeignKey('task.task_id'), nullable=False)
     student_id = db.Column(db.String(10), db.ForeignKey('student.student_id'), nullable=False)
-
-
-
-
-  
-    
-    
     
